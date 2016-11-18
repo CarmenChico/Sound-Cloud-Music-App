@@ -1,16 +1,31 @@
 *{
-  margin:5px auto;
-  background-size: cover;
+
+}
+html {
   // background-image: url("http://www.intrawallpaper.com/static/images/maxresdefault_jKFJl8g.jpg");
   // background-image: url("http://www.intrawallpaper.com/static/images/background-wallpapers-24_HDsgH3x.jpg");
   // background-image: url("https://images3.alphacoders.com/102/102727.jpg");
   // background-image: url("https://images3.alphacoders.com/294/29499.jpg");
-  background-image: url("http://www.intrawallpaper.com/static/images/blocks_rainbow_3d_graphics_background_76559_1920x1080_IX3eukJ.jpg");
+  background: url("http://www.intrawallpaper.com/static/images/blocks_rainbow_3d_graphics_background_76559_1920x1080_IX3eukJ.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+img.bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top:0;
+  left:0;
 }
 
 .container {
   // display: flex;
   // align-items: center;
+  width: 90%;
+  margin: 25px auto;
+  // background-color: rgba(255, 255, 255, 0.52);
 }
 
 h1 {
@@ -21,4 +36,45 @@ h1 {
   text-shadow: 2px 2px white;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 48px;
+}
+.musicInput {
+  // background-color:rgba(225, 249, 229, 0.69);
+   // background-color: rgba(255, 255, 255, 0.52);
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   padding: 30px;
+   background-color: white;
+
+}
+
+.audioInput {
+    display: block;
+    padding: 5px;
+    height: 160px;
+    width: 160px;
+        img {
+            height: 100%;
+            // width: 100px;
+        }
+
+        p.songtitle {
+            color:lightblue;
+            font-weight: bolder;
+            font-size: 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding:0;
+            margin: 0px;
+        }
+        p.user {
+            color:black;
+            font-size: 14px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding:0;
+            margin: 0px;
+        }
 }
