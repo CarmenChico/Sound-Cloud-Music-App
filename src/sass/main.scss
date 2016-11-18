@@ -22,6 +22,7 @@ img.bg {
 
 .container {
   // display: flex;
+  text-align: center;
   // align-items: center;
   width: 90%;
   margin: 25px auto;
@@ -39,36 +40,30 @@ h1 {
 }
 .musicInput {
   // background-color:rgba(225, 249, 229, 0.69);
-   // background-color: rgba(255, 255, 255, 0.52);
+   background-color: rgba(255, 255, 255, 0.52);
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
    padding: 30px;
-   background-color: white;
+   // background-color: white;
 
 }
 
 .audioInput {
     display: block;
     padding: 5px;
-    height: 160px;
-    width: 160px;
+    // height: 160px;
+    width: 220px;
+    // margin-top: 5px;
+    // margin-bottom: 5px;
+
         img {
-            height: 100%;
-            // width: 100px;
+            height: 218px;
+            width: 218px;
         }
 
-        p.songtitle {
-            color:lightblue;
-            font-weight: bolder;
-            font-size: 10px;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            padding:0;
-            margin: 0px;
-        }
-        p.user {
+
+        .user {
             color:black;
             font-size: 14px;
             text-overflow: ellipsis;
@@ -77,4 +72,32 @@ h1 {
             padding:0;
             margin: 0px;
         }
+}
+.audioInput:hover {
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.3);
+    color:white;
+    padding:23px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    // box-shadow: 2px 2px grey;
+        img:hover {
+            height:225px;
+            width:auto;
+        }
+}
+.songtitle {
+    color:lightblue;
+    font-weight: bolder;
+    font-size: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding:0;
+    margin: 0px;
+}
+
+form {
+    margin:10px;
 }
