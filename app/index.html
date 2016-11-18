@@ -13,10 +13,17 @@
 
       <h1>C.Chico's Music Site</h1>
 
-      <form >
-          <input type="text" name="name" value="" placeholder="search for songs">
+      <audio class="audio" controls autoplay >
+        <p>If you are reading this, it is because your browser does not support the audio element.</p>
+      </audio>
+
+      <form class="searchArea">
+              <span>
+                  <input class="search" type="text" name="name" value="" placeholder="search for artist or song... ">
+                  <input class="submitBtn" type="submit" value="submit">
+              </span>
       </form>
-      <audio controls autoplay><p>If you are reading this, it is because your browser does not support the audio element.</p> </audio>
+
 
       <div class="musicInput">
 
@@ -25,8 +32,3 @@
     <script src="js/bundle.js"></script>
   </body>
 </html>
-
-
-<audio src="">
-
-</audio>

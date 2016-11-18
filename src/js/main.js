@@ -35,9 +35,11 @@ function extractData(music) {
 
         $(".musicInput").append(`
           <div class="audioInput" data-stream="${song.stream_url}">
-              <img src="${song.artwork_url || song.user.avatar_url}">
-              <div class"songtitle">${song.title}</div>
-              <div class="user">${song.user.username}</div>
+              <img class="artwork" src="${song.artwork_url || song.user.avatar_url}">
+              <div class="audiotext">
+                  <div class="songtitle">${song.title}</div>
+                  <div class="user">${song.user.username}</div>
+              </div>
           </div>`
         );
     })
