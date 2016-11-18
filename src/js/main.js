@@ -15,7 +15,7 @@ function requestData (search_term) {
         data: {
           client_id: c_ID,
           q:  search_term,
-          limit: 30,
+          limit: 20,
           // genre: "christian"
         }
 
@@ -26,6 +26,7 @@ function requestData (search_term) {
 function extractData(music) {
   // console.log(music);
   $(".musicInput").empty()
+  //we add the empt function so that the music results are cleared after we search for something new
   // $(".musicInput").html('')
     music.map(function(song) {
         // console.log(song);
@@ -48,7 +49,9 @@ function extractData(music) {
 $('body')
     .on('click', '.audioInput', function(event){
         $('audio').attr('src', $(this).data('stream') + '?client_id=' + c_ID)[0].play()
+
     })
+    //
     .on('submit', 'form', function(){
         var term = $('input').val();
         requestData(term).then(extractData);
